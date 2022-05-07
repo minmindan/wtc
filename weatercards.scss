@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    font-family: DejaVu Sans Mono, monospace;
+    font-weight: 600;
+    color: rgb(228, 107, 163);
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+#app{
+    width: 50%;
+    height: 100vh;
+    // border: solid 1px;
+    display: flex;
+    // flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    #time{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 36px;
+    }
+}
+#card{
+    width: 50%;
+    height: 100vh;
+    padding: 80px;
+    // background-color: antiquewhite;
+    .box{
+        width: 0;height: 0;
+        overflow: hidden;
+        border-radius: 10px 30px 10px 30px;
+        background-color: rgb(241, 204, 215);
+        h1{
+            font-size: 48px;
+            margin-left: 50px;
+            color: rgb(173, 23, 81);
+        }
+        p{
+            margin-left: 80px;
+            font-size: 36px;
+            border-bottom: solid 1px rgb(214, 68, 153);
+            width: 60%;
+        }
+    }
+    
+}
+#app{
+    svg{
+        g{
+            &:hover{
+                opacity: 0.2;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#app {
+  width: 50%;
+  height: 100vh;
+  border: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app #kinmen:hover {
+  opacity: 0.5;
+}
+
+#card {
+  width: 50%;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+#card .box {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#app svg g:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=weatercards.css.map */

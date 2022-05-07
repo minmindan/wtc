@@ -1,0 +1,53 @@
+<html>
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    <!-- <script src="https://unpkg.com/topojson-client@3"></script> -->
+    <!-- <script src="./dist/taiwan-vue-components.min.js"></script> -->
+    <!-- <script src="/taiwan_weater_card.js"></script> -->
+</head>
+<link rel="stylesheet" href="/public/css/weatercards.css">
+<style>
+    .big{
+        width: 100% !important ;
+        height: 100% !important ;
+    }
+</style>
+<body>
+    <div id="app">
+        <div id="time">Current Time : </div>
+        <Country width="800" height="600" stroke="#000000" fill="#DCDCDC" fit="true"></Country>
+    </div>
+    <div id="card">
+        <div class="boder"></div>
+        <!-- <div id="hover16"></div> -->
+    </div>
+    
+<script src="/card.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app'
+    })
+    </script>
+    <script src="/taiwan_weater_card.js"></script>
+    <!-- <script src="/456456.js"></script> -->
+    <script>
+        setInterval(time,1000)
+        function time(){
+        Today = new Date();
+        y=Today.getFullYear();
+        mh=(Today.getMonth()+1);
+        d=Today.getDate();
+        h=Today.getHours();
+        m=Today.getMinutes();
+        s=Today.getSeconds();　
+        var m =String(m);
+        // console.log(typeof(m));
+        if(m.length == 1){
+            m='0'+m;
+        }
+        document.querySelector('#time').innerHTML = `Current Time:${h}:${m}:${s}   ${mh}/${d}/${y}`
+    }
+        </script>
+       
+</body>

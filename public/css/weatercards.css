@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: DejaVu Sans Mono, monospace;
+  font-weight: 600;
+  color: #e46ba3;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#app {
+  width: 50%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#app #time {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 36px;
+}
+
+#card {
+  width: 50%;
+  height: 100vh;
+  padding: 80px;
+}
+
+#card .box {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px 30px 10px 30px;
+  background-color: #f1ccd7;
+}
+
+#card .box h1 {
+  font-size: 48px;
+  margin-left: 50px;
+  color: #ad1751;
+}
+
+#card .box p {
+  margin-left: 80px;
+  font-size: 36px;
+  border-bottom: solid 1px #d64499;
+  width: 60%;
+}
+
+#app svg g:hover {
+  opacity: 0.2;
+}
+/*# sourceMappingURL=weatercards.css.map */
