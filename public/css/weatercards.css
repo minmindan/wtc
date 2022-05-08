@@ -15,6 +15,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: rgba(241, 204, 215, 0.25);
 }
 
 #app {
@@ -50,7 +51,7 @@ body {
   height: 0;
   overflow: hidden;
   border-radius: 10px 30px 10px 30px;
-  background-color: #f1ccd7;
+  background-color: rgba(241, 204, 215, 0.3);
 }
 
 #card .box h1 {
