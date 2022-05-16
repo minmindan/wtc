@@ -29,159 +29,144 @@ function printt(data){
     }else{
       ex='<p style="color: #737CFF; width: 70%;">降雨機率低，出門時要注意防疫！</p>'
     }
-    document.querySelector("#card").innerHTML += `<div id="hover${ii}" class="box"><h1>${locationName}</h1><p>${startTime} 至 ${endTime}</p><p>最低溫度:${minT}°C</p><p>最高溫度:${maxT}°C</p><p>${pop}</p><p>濕度:${ci}%</p>${ex}</div>`
+    document.querySelector("#card").innerHTML += `<div id="hover${ii}" class="box non"><h1>${locationName}</h1><p>${startTime} 至 ${endTime}</p><p>最低溫度:${minT}°C</p><p>最高溫度:${maxT}°C</p><p>${pop}</p><p>濕度:${ci}%</p>${ex}</div>`
     ii=ii+1; 
     return citys;
   });
 }
 
+function none(){
+  hover0.classList.remove('boom')
+  hover1.classList.remove('boom')
+  hover2.classList.remove('boom')
+  hover3.classList.remove('boom')
+  hover4.classList.remove('boom')
+  hover5.classList.remove('boom')
+  hover6.classList.remove('boom')
+  hover7.classList.remove('boom')
+  hover8.classList.remove('boom')
+  hover9.classList.remove('boom')
+  hover10.classList.remove('boom')
+  hover11.classList.remove('boom')
+  hover12.classList.remove('boom')
+  hover13.classList.remove('boom')
+  hover14.classList.remove('boom')
+  hover15.classList.remove('boom')
+  hover16.classList.remove('boom')
+  hover17.classList.remove('boom')
+  hover18.classList.remove('boom')
+  hover19.classList.remove('boom')
+  hover20.classList.remove('boom')
+  hover21.classList.remove('boom')
+}
 
 
-
-ChiayiCounty.addEventListener('mouseenter',function(){
+ChiayiCounty.addEventListener('click',function(){
+   none();
   hover0.classList.add('boom')
 });
-ChiayiCounty.addEventListener('mouseleave',function(){
-  hover0.classList.remove('boom')
-});
 
-NewTaipei.addEventListener('mouseenter',function(){
+NewTaipei.addEventListener('click',function(){
+   none();
   hover1.classList.add('boom')
 });
-NewTaipei.addEventListener('mouseleave',function(){
-  hover1.classList.remove('boom')
-});
-ChiayiCity.addEventListener('mouseenter',function(){
+
+ChiayiCity.addEventListener('click',function(){
+   none();
   hover2.classList.add('boom')
 });
-ChiayiCity.addEventListener('mouseleave',function(){
-  hover2.classList.remove('boom')
-});
-HsinchuCity.addEventListener('mouseenter',function(){
+
+HsinchuCity.addEventListener('click',function(){
+   none();
   hover3.classList.add('boom')
 });
-HsinchuCity.addEventListener('mouseleave',function(){
-  hover3.classList.remove('boom')
-});
-HsinchuCounty.addEventListener('mouseenter',function(){
+
+HsinchuCounty.addEventListener('click',function(){
+   none();
   hover4.classList.add('boom')
 });
-HsinchuCounty.addEventListener('mouseleave',function(){
-  hover4.classList.remove('boom')
-});
-taipei.addEventListener('mouseenter',function(){
+
+taipei.addEventListener('click',function(){
+   none();
   hover5.classList.add('boom')
 });
-taipei.addEventListener('mouseleave',function(){
-  hover5.classList.remove('boom')
-});
-TainanCity.addEventListener('mouseenter',function(){
+
+TainanCity.addEventListener('click',function(){
+   none();
   hover6.classList.add('boom')
 });
-TainanCity.addEventListener('mouseleave',function(){
-  hover6.classList.remove('boom')
-});
-Yilan.addEventListener('mouseenter',function(){
+
+Yilan.addEventListener('click',function(){
+   none();
   hover7.classList.add('boom')
 });
-Yilan.addEventListener('mouseleave',function(){
-  hover7.classList.remove('boom')
-});
 
-MiaoliCounty.addEventListener('mouseenter',function(){
+MiaoliCounty.addEventListener('click',function(){
+   none();
   hover8.classList.add('boom')
 });
-MiaoliCounty.addEventListener('mouseleave',function(){
-  hover8.classList.remove('boom')
-});
-YunlinCounty.addEventListener('mouseenter',function(){
+
+YunlinCounty.addEventListener('click',function(){
+   none();
   hover9.classList.add('boom')
 });
-YunlinCounty.addEventListener('mouseleave',function(){
-  hover9.classList.remove('boom')
-});
 
-Hualien.addEventListener('mouseenter',function(){
+Hualien.addEventListener('click',function(){
+   none();
   hover10.classList.add('boom')
 });
-Hualien.addEventListener('mouseleave',function(){
-  hover10.classList.remove('boom')
-});
 
-TaichungCity.addEventListener('mouseenter',function(){
+TaichungCity.addEventListener('click',function(){
+   none();
   hover11.classList.add('boom')
 });
-TaichungCity.addEventListener('mouseleave',function(){
-  hover11.classList.remove('boom')
-});
 
-Taitung.addEventListener('mouseenter',function(){
+Taitung.addEventListener('click',function(){
+   none();
   hover12.classList.add('boom')
 });
-Taitung.addEventListener('mouseleave',function(){
-  hover12.classList.remove('boom')
-});
 
-TaoyuanCity.addEventListener('mouseenter',function(){
+TaoyuanCity.addEventListener('click',function(){
+   none();
   hover13.classList.add('boom')
 });
 
-TaoyuanCity.addEventListener('mouseleave',function(){
-  hover13.classList.remove('boom')
-});
-
-NantouCounty.addEventListener('mouseenter',function(){
+NantouCounty.addEventListener('click',function(){
+   none();
   hover14.classList.add('boom')
 });
-NantouCounty.addEventListener('mouseleave',function(){
-  hover14.classList.remove('boom')
-});
 
-KaohsiungCity.addEventListener('mouseenter',function(){
+KaohsiungCity.addEventListener('click',function(){
+   none();
   hover15.classList.add('boom')
 });
-KaohsiungCity.addEventListener('mouseleave',function(){
-  hover15.classList.remove('boom')
-});
 
-kinmen.addEventListener('mouseenter',function(){
+kinmen.addEventListener('click',function(){
+   none();
     hover16.classList.add('boom')
 });
-kinmen.addEventListener('mouseleave',function(){
-    hover16.classList.remove('boom')
-});
 
-PingtungCounty.addEventListener('mouseenter',function(){
+PingtungCounty.addEventListener('click',function(){
+   none();
   hover17.classList.add('boom')
 });
-PingtungCounty.addEventListener('mouseleave',function(){
-  hover17.classList.remove('boom')
-});
 
-Keelung.addEventListener('mouseenter',function(){
+Keelung.addEventListener('click',function(){
+   none();
   hover18.classList.add('boom')
 });
-Keelung.addEventListener('mouseleave',function(){
-  hover18.classList.remove('boom')
-});
 
-Penghu.addEventListener('mouseenter',function(){
+Penghu.addEventListener('click',function(){
+   none();
   hover19.classList.add('boom')
 });
-Penghu.addEventListener('mouseleave',function(){
-  hover19.classList.remove('boom')
-});
 
-ChanghuaCounty.addEventListener('mouseenter',function(){
+ChanghuaCounty.addEventListener('click',function(){
+   none();
   hover20.classList.add('boom');
 });
-ChanghuaCounty.addEventListener('mouseleave',function(){
-  hover20.classList.remove('boom');
-});
 
-Lienchiang.addEventListener('mouseenter',function(){
+Lienchiang.addEventListener('click',function(){
+   none();
   hover21.classList.add('boom')
-});
-Lienchiang.addEventListener('mouseleave',function(){
-  hover21.classList.remove('boom')
 });
