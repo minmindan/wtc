@@ -5,7 +5,7 @@ function farch_data(){
     return response.json()
   }).then(function(data){
     printt(data);
-    return data;
+    console.log(data);
   })
  }
 let ii = 0;
@@ -29,9 +29,8 @@ function printt(data){
     }else{
       ex='<p style="color: #737CFF; width: 70%;">降雨機率低，出門時要注意防疫！</p>'
     }
-    document.querySelector("#card").innerHTML += `<div id="hover${ii}" class="box non"><h1>${locationName}</h1><p>${startTime} 至 ${endTime}</p><p>最低溫度:${minT}°C</p><p>最高溫度:${maxT}°C</p><p>${pop}</p><p>濕度:${ci}%</p>${ex}</div>`
+    document.querySelector("#card").innerHTML += `<div id="hover${ii}" class="box"><h1>${locationName}</h1><p>${startTime} 至 ${endTime}</p><p>最低溫度:${minT}°C</p><p>最高溫度:${maxT}°C</p><p>${pop}</p><p>濕度:${ci}%</p>${ex}</div>`
     ii=ii+1; 
-    return citys;
   });
 }
 
@@ -60,113 +59,121 @@ function none(){
   hover21.classList.remove('boom')
 }
 
+var box = document.querySelectorAll('.box')
+console.log(box);
 
 ChiayiCounty.addEventListener('click',function(){
-   none();
+  none();
   hover0.classList.add('boom')
 });
 
 NewTaipei.addEventListener('click',function(){
-   none();
+  none();
   hover1.classList.add('boom')
 });
 
 ChiayiCity.addEventListener('click',function(){
-   none();
+  none();
   hover2.classList.add('boom')
 });
 
 HsinchuCity.addEventListener('click',function(){
-   none();
+  none();
   hover3.classList.add('boom')
 });
 
 HsinchuCounty.addEventListener('click',function(){
-   none();
+  none();
   hover4.classList.add('boom')
 });
 
 taipei.addEventListener('click',function(){
-   none();
+  none();
   hover5.classList.add('boom')
+  package.classList.remove('none')
 });
 
 TainanCity.addEventListener('click',function(){
-   none();
+  none();
   hover6.classList.add('boom')
 });
 
 Yilan.addEventListener('click',function(){
-   none();
+  none();
   hover7.classList.add('boom')
 });
 
 MiaoliCounty.addEventListener('click',function(){
-   none();
+  none();
   hover8.classList.add('boom')
 });
 
 YunlinCounty.addEventListener('click',function(){
-   none();
+  none();
   hover9.classList.add('boom')
 });
 
 Hualien.addEventListener('click',function(){
-   none();
+  none();
   hover10.classList.add('boom')
 });
 
 TaichungCity.addEventListener('click',function(){
-   none();
+  none();
   hover11.classList.add('boom')
 });
 
 Taitung.addEventListener('click',function(){
-   none();
+  none();
   hover12.classList.add('boom')
 });
 
 TaoyuanCity.addEventListener('click',function(){
-   none();
+  none();
   hover13.classList.add('boom')
 });
 
 NantouCounty.addEventListener('click',function(){
-   none();
+  none();
   hover14.classList.add('boom')
 });
 
 KaohsiungCity.addEventListener('click',function(){
-   none();
+  none();
   hover15.classList.add('boom')
 });
 
 kinmen.addEventListener('click',function(){
-   none();
+  none();
     hover16.classList.add('boom')
 });
 
 PingtungCounty.addEventListener('click',function(){
-   none();
+  none();
   hover17.classList.add('boom')
 });
 
 Keelung.addEventListener('click',function(){
-   none();
+  none();
   hover18.classList.add('boom')
 });
 
 Penghu.addEventListener('click',function(){
-   none();
+  none();
   hover19.classList.add('boom')
 });
 
 ChanghuaCounty.addEventListener('click',function(){
-   none();
+  none();
   hover20.classList.add('boom');
 });
 
 Lienchiang.addEventListener('click',function(){
-   none();
+  none();
   hover21.classList.add('boom')
 });
+
+but.addEventListener('click',function(){
+  none();
+  package.classList.add('none')
+})

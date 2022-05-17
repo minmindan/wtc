@@ -40,6 +40,14 @@ body {
   font-size: 36px;
 }
 
+#app #county {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 #card {
   width: 50%;
   height: 100vh;
@@ -103,5 +111,21 @@ body {
   opacity: 0.5;
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+#package {
+  width: 100%;
+  height: 100%;
+  border: 20px solid;
+  background-color: white;
+}
+
+.fontsize {
+  font-size: 50px;
+  margin: 20px;
+}
+
+.none {
+  display: none;
 }
 /*# sourceMappingURL=weatercards.css.map */

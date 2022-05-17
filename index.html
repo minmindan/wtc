@@ -2,6 +2,7 @@
 <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://kit.fontawesome.com/99e51d1c05.js" crossorigin="anonymous"></script>
     <!-- <script src="https://unpkg.com/topojson-client@3"></script> -->
     <!-- <script src="./dist/taiwan-vue-components.min.js"></script> -->
     <!-- <script src="/taiwan_weater_card.js"></script> -->
@@ -17,6 +18,16 @@
         <div>
             <div id="time">Current Time : </div>
             <Country width="800" height="600" stroke="#000000" fill="#DCDCDC" fit="true"></Country>
+        </div>
+        <div id="county">
+            <div id="package" width="600" class="none">
+                <div>
+                    <i class="fa-solid fa-xmark fontsize" id="but"></i>
+                </div>
+                <div>
+                    <taipei width="600" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="121.55" lat="25.05" scale="80000"></taipei>
+                </div>
+            </div>
         </div>
     </div>
     <div id="card">
