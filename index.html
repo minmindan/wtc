@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
@@ -9,57 +10,120 @@
 </head>
 <link rel="stylesheet" href="./public/css/weatercards.css">
 <style>
-    .boom{
-       display: block !important;
+    .boom {
+        display: block !important;
     }
 </style>
+
 <body>
     <div id="app">
         <div>
             <div id="time">Current Time : </div>
-            <Country width="800" height="600" stroke="#000000" fill="#DCDCDC" fit="true"></Country>
+            <Country width="800" height="600" stroke="#000079" fill="#A6FFA6" fit="true"></Country>
         </div>
         <div id="county">
-            <div id="package" width="600" class="none">
+            <div id="package" width="800" class="none">
                 <div>
                     <i class="fa-solid fa-xmark fontsize" id="but"></i>
                 </div>
-                <div>
-                    <taipei width="600" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="121.55" lat="25.05" scale="80000"></taipei>
+                <div id="Keelungm" class="none">
+                    <Keelung width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="121.72" lat="25.09" scale="80000"></Keelung>              
+                </div>
+                <div id="Penghum" class="none">
+                    <Penghu width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="119.54" lat="23.4" scale="30000"></Penghu>                
+                </div>
+                <div id="Hualienm" class="none">
+                    <Hualien width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="121.4" lat="23.6" scale="18000"></Hualien>                
+                </div>
+                <div id="Taitungm" class="none">
+                    <Taitung width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="121.1" lat="22.8" scale="22000"></Taitung>                
+                </div>
+                <div id="Pingtungm" class="none">
+                    <Pingtung width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="120.62" lat="22.36" scale="28000"></Pingtung>                
+                </div>
+                <div id="ChiayiCitym" class="none">
+                    <Chiayi-City width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="120.45" lat="23.45" scale="90000"></Chiayi-City>                
+                </div>
+                <div id="Chiayim" class="none">
+                    <Chiayi  width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="120.5" lat="23.4" scale="30000"></Chiayi>                
+                </div>
+                <div id="Yunlinm" class="none">
+                    <Yunlin width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="120.4" lat="23.6" scale="30000"></Yunlin>                
+                </div>
+                <div id="Nantoum" class="none">
+                    <Nantou width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="120.95" lat="23.8" scale="30000"></Nantou>                
+                </div>
+                <div id="Changhuam" class="none">
+                    <Changhua width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="120.48" lat="23.95" scale="35000"></Changhua>                
+                </div>
+                <div id="Taichungm" class="none">
+                    <Taichung width="800" height="600" stroke="#000079" fill="#F9F9F9" fit="false" lon="120.95" lat="24.15" scale="25000"></Taichung>               
+                </div>
+                <div id="Kinmenm" class="none">
+                    <Kinmen width="800" height="600" stroke="#000079" fill="#F9F9F9" fit="false" lon="118.35" lat="24.41" scale="70000"></Kinmen>                
+                </div>
+                <div id="Taoyuanm" class="none">
+                    <Taoyuan  width="800" height="600" stroke="#000079" fill="#F9F9F9" fit="false" lon="121.25" lat="24.8" scale="30000"></Taoyuan>                
+                </div>
+                <div id="Tainanm" class="none">
+                    <Tainan width="800" height="600" stroke="#000079" fill="#F9F9F9" fit="false" lon="120.32" lat="23.08" scale="30000"></Tainan>                
+                </div>
+                <div id="Kaohsiungm" class="none">
+                    <Kaohsiung width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="120.6" lat="22.9" scale="22000"></Kaohsiung>                
+                </div>
+                <div id="Miaolim" class="none">
+                    <Miaoli width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="120.95" lat="24.48" scale="35000"></Miaoli>                
+                </div>
+                <div id="HsinchuCitym" class="none">
+                    <Hsinchu-City width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="120.95" lat="24.75" scale="70000"></Hsinchu-City>                
+                </div>
+                <div id="Hsinchum" class="none">
+                    <Hsinchu width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="121.15" lat="24.6" scale="35000"></Hsinchu>                
+                </div>
+                <div id="Ilanm" class="none">
+                    <Ilan width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="121.6" lat="24.55" scale="35000"></Ilan>                
+                </div>
+                <div id="NewTaipeim" class="none">
+                    <New-Taipei width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="121.6" lat="24.95" scale="35000"></New-Taipei>                
+                </div>
+                <div id="taipeim" class="none">
+                    <taipei width="800" height="600" stroke="#000000" fill="#F9F9F9" fit="false" lon="121.55" lat="25.05" scale="80000"></taipei>
                 </div>
             </div>
         </div>
     </div>
     <div id="card">
         <div class="boder"></div>
-        <!-- <div id="hover16"></div> -->
     </div>
-    
-<script src="./card.js"></script>
-<script>
-    var app = new Vue({
-        el: '#app'
-    })
+
+    <script src="./card.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app'
+        })
     </script>
     <script src="./taiwan_weater_card.js"></script>
-    <!-- <script src="/456456.js"></script> -->
     <script>
-        setInterval(time,1000)
-        function time(){
-        Today = new Date();
-        y=Today.getFullYear();
-        mh=(Today.getMonth()+1);
-        d=Today.getDate();
-        h=Today.getHours();
-        m=Today.getMinutes();
-        s=Today.getSeconds();　
-        var m =String(m);
-        // console.log(typeof(m));
-        if(m.length == 1){
-            m='0'+m;
+        setInterval(time, 1000)
+        function time() {
+            Today = new Date();
+            y = Today.getFullYear();
+            mh = (Today.getMonth() + 1);
+            d = Today.getDate();
+            h = Today.getHours();
+            m = Today.getMinutes();
+            s = Today.getSeconds();
+            var m = String(m);
+            var s = String(s);
+            var y = String(y).substr(2, 2);
+            if (m.length == 1) {
+                m = '0' + m;
+            }
+            if (s.length == 1) {
+                s = '0' + s;
+            }
+            document.querySelector('#time').innerHTML = `Current Time:${h}:${m}:${s}   ${mh}/${d}/${y}`
         }
-        document.querySelector('#time').innerHTML = `Current Time:${h}:${m}:${s}   ${mh}/${d}/${y}`
-    }
-        </script>
-       
+    </script>
+
 </body>

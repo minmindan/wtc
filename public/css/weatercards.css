@@ -109,8 +109,6 @@ body {
 
 #app svg g:hover {
   opacity: 0.5;
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 #package {
