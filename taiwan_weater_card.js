@@ -62,14 +62,14 @@ function none_(){
   Chiayim.classList.add('none');
   NewTaipeim.classList.add('none');
   HsinchuCitym.classList.add('none');
-  HsinchuCitym.classList.add('none');
+  ChiayiCitym.classList.add('none');
   NewTaipeim.classList.add('none');
   Hsinchum.classList.add('none');
   taipeim.classList.add('none');
   Tainanm.classList.add('none');
   Ilanm.classList.add('none');
   Miaolim.classList.add('none');
-  NewTaipeim.classList.add('none');
+  Yunlinm.classList.add('none');
   Hualienm.classList.add('none');
   Taichungm.classList.add('none');
   Taitungm.classList.add('none');
@@ -103,7 +103,7 @@ ChiayiCity.addEventListener('click',function(){
   none();
   hover2.classList.add('boom');
   package.classList.remove('none');
-  HsinchuCitym.classList.remove('none');
+  ChiayiCitym.classList.remove('none');
 });
 
 HsinchuCity.addEventListener('click',function(){
@@ -152,7 +152,7 @@ YunlinCounty.addEventListener('click',function(){
   none();
   hover9.classList.add('boom');
   package.classList.remove('none');
-  NewTaipeim.classList.remove('none');
+  Yunlinm.classList.remove('none');
 });
 
 Hualien.addEventListener('click',function(){
