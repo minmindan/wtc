@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: "黑體-繁","微軟正黑體", sans-serif;
+    font-family: "黑體-繁","微軟正黑體", "sans-serif";
     font-weight: 600;
     color: rgb(55, 128, 255);
 }
@@ -23,6 +23,9 @@ body{
         left: 50px;
         font-size: 36px;
         color: white;
+        background-color: black;
+        margin: -10px 0 0 -10px;
+        box-shadow:6px 6px 0 0 aliceblue;
     }
     #county{
         position: absolute;
@@ -47,6 +50,7 @@ body{
         color: rgb(129, 175, 218);
         h1{
             font-size: 34px;
+            margin-top: 50px;
             margin-left: 50px;
             color: rgb(134, 149, 230);
         }
@@ -86,7 +90,7 @@ body{
 }
 #package{
     width: 100%;height: 100%;
-    border: 20px solid rgb(129, 175, 218);
+    border: 15px solid rgb(129, 175, 218);
     background-color: white;
 }
 
