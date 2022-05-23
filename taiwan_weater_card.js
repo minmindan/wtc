@@ -5,7 +5,6 @@ function farch_data(){
     return response.json()
   }).then(function(data){
     printt(data);
-    console.log(data);
   })
  }
 let ii = 0;
@@ -19,7 +18,14 @@ function printt(data){
     var maxT =citys.weatherElement[4].time[0].parameter.parameterName;
     var pop =citys.weatherElement[3].time[0].parameter.parameterName;
     var ci =citys.weatherElement[1].time[0].parameter.parameterName;
+    var startTime1 = citys.weatherElement[0].time[1].startTime.substr(11,5).replaceAll('-',"/")
+    var endTime1 = citys.weatherElement[0].time[1].endTime.substr(11,5).replaceAll('-',"/")
+    var minT1= citys.weatherElement[2].time[1].parameter.parameterName;
+    var maxT1 = citys.weatherElement[4].time[1].parameter.parameterName;
+    var pop1 = citys.weatherElement[3].time[1].parameter.parameterName;
+    var ci1 = citys.weatherElement[1].time[1].parameter.parameterName;
     var ex
+    var ex1
     if(ci >= 80){
       ex = '<p style="color: red;">降雨機率高，建議備妥雨具</p>'
     }else if( ci >= 60){
@@ -29,7 +35,17 @@ function printt(data){
     }else{
       ex='<p style="color: #737CFF; width: 70%;">降雨機率低，出門時要注意防疫！</p>'
     }
-    document.querySelector("#card").innerHTML += `<div id="hover${ii}" class="box"><h1>${locationName}</h1><p>${startTime} 至 ${endTime}</p><p>最低溫度:${minT}°C</p><p>最高溫度:${maxT}°C</p><p>${pop}</p><p>濕度:${ci}%</p>${ex}</div>`
+    if(ci1 >= 80){
+      ex1 = '<p style="color: red;">降雨機率高，建議備妥雨具</p>'
+    }else if( ci >= 60){
+      ex1='<p style="color: #FF2A80;">有降雨可能，建議備妥雨具</p>'
+    }else if( ci >= 40){
+      ex1='<p style="color: #FF8C84;">有機會降雨，建議備妥雨具</p>'
+    }else{
+      ex1='<p style="color: #737CFF; width: 70%;">降雨機率低，出門時要注意防疫！</p>'
+    }
+    document.querySelector("#card").innerHTML += `<div id="hover${ii}" class="box"><h1>${locationName}</h1><p>${startTime} 至 ${endTime}</p><p>最低溫度:${minT}°C</p><p>最高溫度:${maxT}°C</p><p>${pop}</p><p>濕度:${ci}%</p>${ex}
+    <p class="margin">${startTime1} 至 ${endTime1}</p><p>最低溫度:${minT1}°C</p><p>最高溫度:${maxT1}°C</p><p>${pop1}</p><p>濕度:${ci1}%</p>${ex1}</div>`
     ii=ii+1; 
   });
 }

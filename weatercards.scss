@@ -46,16 +46,16 @@ body{
         animation-name: boom;
         color: rgb(129, 175, 218);
         h1{
-            font-size: 48px;
+            font-size: 34px;
             margin-left: 50px;
             color: rgb(134, 149, 230);
         }
         p{
             margin-left: 80px;
-            font-size: 36px;
+            font-size: 22px;
             color: rgb(129, 175, 218);
             border-bottom: solid 1px rgb(129, 175, 218);
-            width: 60%;
+            width: 70%;
         }
 
         @keyframes boom {
